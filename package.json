@@ -1,0 +1,29 @@
+{
+  "name": "fencercontracts",
+  "version": "1.0.0",
+  "description": "Смарт-контракты для приложения «FencerFight»",
+  "homepage": "https://github.com/ArtemPodloboshnikov/FencerContracts#readme",
+  "bugs": {
+    "url": "https://github.com/ArtemPodloboshnikov/FencerContracts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemPodloboshnikov/FencerContracts.git"
+  },
+  "license": "MIT",
+  "author": "Artem Podloboshnikov",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chain": "hardhat node --hostname 0.0.0.0",
+    "deploy": "hardhat run scripts/deploy.ts --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "hardhat": "^2.26.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "@openzeppelin/contracts-upgradeable": "^5.4.0",
+    "@openzeppelin/hardhat-upgrades": "^3.9.1"
+  }
+}
